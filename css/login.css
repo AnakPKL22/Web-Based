@@ -1,0 +1,53 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Pusatkan konten horizontal secara keseluruhan */
+    align-items: center; /* Pusatkan konten vertikal secara keseluruhan */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column; /* Tampilkan child dalam satu kolom */
+    align-items: center; /* Pusatkan child secara horizontal di dalam .login-container */
+}
+
+.login-container h1 {
+    margin: 10px;
+}
+
+.login-container img {
+    width: 200px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #950101;
+}
